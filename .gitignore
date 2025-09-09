@@ -1,0 +1,56 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+# ========================
+# Node (React frontend)
+# ========================
+client/node_modules/
+client/build/
+client/dist/
+client/.env
+
+# ========================
+# Spring Boot backend
+# ========================
+backend/target/
+backend/*.class
+backend/*.jar
+backend/*.war
+
+# ========================
+# Server folder (if it has videos or unwanted assets)
+# ========================
+server/*.mp4
+server/*.avi
+server/*.mov
+server/*.mkv
+server/*.ts   # ignore video transport streams
+!server/**/*.ts # keep .ts files if they are TypeScript code
+
+# ========================
+# Shared folder cache/build (if any)
+# ========================
+shared/node_modules/
+shared/dist/
+
+# ========================
+# IDE and Editor settings
+# ========================
+.idea/
+.vscode/
+*.iml
+
+# ========================
+# Logs and temp files
+# ========================
+*.log
+*.tmp
+
+# ========================
+# System/OS files
+# ========================
+.DS_Store
+Thumbs.db
